@@ -1,0 +1,23 @@
+# Raw IMDb download (about 40 MB, re-download with src/data_prep.py)
+data/imdb/
+data/*.parquet
+data/extra/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Saved models
+models/
+
+# Office lock files
+~$*
+
+# Submission archive (built with git archive)
+submission/
+
+# Final presentation (kept local)
+final/CSC 425 Final Presentation.*
