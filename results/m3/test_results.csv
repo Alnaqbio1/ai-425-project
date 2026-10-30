@@ -1,0 +1,3 @@
+model,train_reviews,accuracy,precision,recall,f1,neg_sentences,neg_pairs,mixed,sarcasm
+"M2 baseline (LogReg, words+pairs, 3,200 reviews)",3200,0.856,0.852,0.862,0.857,13,3,8,4
+"Final (LogReg, words+pairs, 25,000 reviews)",25000,0.905,0.906,0.904,0.905,14,4,9,7

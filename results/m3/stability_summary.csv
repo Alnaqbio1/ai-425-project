@@ -1,0 +1,5 @@
+features,f1_mean,f1_std,f1_min,f1_max,neg_pairs_mean,neg_pairs_min,neg_pairs_max
+words,0.865,0.016,0.846,0.885,1.4,0,2
+words+pairs,0.881,0.021,0.86,0.912,3.0,2,4
+words+neg,0.871,0.01,0.864,0.889,5.0,3,7
+words+pairs+neg,0.879,0.016,0.867,0.906,4.0,3,5

@@ -1,0 +1,21 @@
+pair_id,variant,text,label,baseline,baseline_ok,final,final_ok
+1,base,The movie was enjoyable.,positive,negative (0.53),False,positive (1.00),True
+1,negated,The movie was not enjoyable.,negative,negative (0.60),True,positive (0.81),False
+2,base,I would recommend this movie.,positive,positive (0.55),True,positive (1.00),True
+2,negated,I would not recommend this movie.,negative,negative (0.57),True,negative (1.00),True
+3,base,The acting was good.,positive,negative (0.64),False,positive (0.96),True
+3,negated,The acting was not good.,negative,negative (0.76),True,negative (1.00),True
+4,base,This film is worth watching.,positive,positive (0.65),True,positive (1.00),True
+4,negated,This film is not worth watching.,negative,positive (0.50),False,negative (1.00),True
+5,base,I liked the ending.,positive,positive (0.62),True,positive (1.00),True
+5,negated,I did not like the ending.,negative,negative (0.51),True,negative (0.96),True
+6,base,The plot made sense.,positive,negative (0.64),False,negative (0.55),False
+6,negated,The plot did not make sense.,negative,negative (0.69),True,negative (1.00),True
+7,base,It was a great movie.,positive,positive (0.86),True,positive (1.00),True
+7,negated,It was not a great movie.,negative,positive (0.72),False,positive (1.00),False
+8,base,The jokes were funny.,positive,positive (0.54),True,negative (0.95),False
+8,negated,The jokes were not funny.,negative,negative (0.55),True,negative (1.00),True
+9,base,The film was boring.,negative,negative (0.64),True,negative (1.00),True
+9,negated,The film was not boring.,positive,negative (0.76),False,negative (1.00),False
+10,base,The sequel was bad.,negative,negative (0.69),True,negative (1.00),True
+10,negated,The sequel was not bad.,positive,negative (0.71),False,negative (1.00),False

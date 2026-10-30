@@ -1,0 +1,9 @@
+train_size,features,accuracy,precision,recall,f1,neg_sentences,neg_pairs,mixed,sarcasm
+3200,words+pairs,0.885,0.897,0.87,0.883,14,4,8,4
+3200,words+pairs+neg,0.89,0.904,0.872,0.888,14,4,6,4
+6400,words+pairs,0.905,0.911,0.898,0.904,13,3,9,6
+6400,words+pairs+neg,0.891,0.906,0.872,0.889,15,5,8,6
+12800,words+pairs,0.914,0.907,0.922,0.914,14,4,9,7
+12800,words+pairs+neg,0.91,0.9,0.922,0.911,13,3,9,5
+24200,words+pairs,0.915,0.909,0.922,0.916,15,5,9,7
+24200,words+pairs+neg,0.912,0.908,0.918,0.913,13,3,9,6
