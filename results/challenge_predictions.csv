@@ -1,0 +1,21 @@
+pair_id,variant,text,label,LogReg A,LogReg A ok,LogReg B,LogReg B ok,NaiveBayes A,NaiveBayes A ok,NaiveBayes B,NaiveBayes B ok
+1,base,The movie was enjoyable.,positive,positive (0.55),True,negative (0.53),False,positive (0.54),True,negative (0.57),False
+1,negated,The movie was not enjoyable.,negative,negative (0.55),True,negative (0.60),True,positive (0.52),False,negative (0.60),True
+2,base,I would recommend this movie.,positive,positive (0.53),True,positive (0.55),True,positive (0.51),True,positive (0.58),True
+2,negated,I would not recommend this movie.,negative,negative (0.58),True,negative (0.57),True,negative (0.51),True,negative (0.62),True
+3,base,The acting was good.,positive,negative (0.68),False,negative (0.64),False,negative (0.61),False,negative (0.68),False
+3,negated,The acting was not good.,negative,negative (0.77),True,negative (0.76),True,negative (0.62),True,negative (0.79),True
+4,base,This film is worth watching.,positive,positive (0.66),True,positive (0.65),True,negative (0.51),False,positive (0.59),True
+4,negated,This film is not worth watching.,negative,positive (0.55),False,positive (0.50),False,negative (0.52),True,negative (0.61),True
+5,base,I liked the ending.,positive,positive (0.66),True,positive (0.62),True,positive (0.53),True,positive (0.54),True
+5,negated,I did not like the ending.,negative,negative (0.64),True,negative (0.51),True,negative (0.60),True,negative (0.56),True
+6,base,The plot made sense.,positive,negative (0.74),False,negative (0.64),False,negative (0.66),False,negative (0.66),False
+6,negated,The plot did not make sense.,negative,negative (0.83),True,negative (0.69),True,negative (0.68),True,negative (0.71),True
+7,base,It was a great movie.,positive,positive (0.95),True,positive (0.86),True,positive (0.63),True,positive (0.79),True
+7,negated,It was not a great movie.,negative,positive (0.89),False,positive (0.72),False,positive (0.60),False,positive (0.65),False
+8,base,The jokes were funny.,positive,positive (0.61),True,positive (0.54),True,negative (0.55),False,negative (0.61),False
+8,negated,The jokes were not funny.,negative,positive (0.52),False,negative (0.55),True,negative (0.56),True,negative (0.71),True
+9,base,The film was boring.,negative,negative (0.86),True,negative (0.64),True,negative (0.77),True,negative (0.71),True
+9,negated,The film was not boring.,positive,negative (0.90),False,negative (0.76),False,negative (0.77),False,negative (0.73),False
+10,base,The sequel was bad.,negative,negative (0.90),True,negative (0.69),True,negative (0.75),True,negative (0.73),True
+10,negated,The sequel was not bad.,positive,negative (0.92),False,negative (0.71),False,negative (0.76),False,negative (0.70),False

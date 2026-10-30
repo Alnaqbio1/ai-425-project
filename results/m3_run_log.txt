@@ -1,0 +1,52 @@
+== 1. Tuning ==
+  LogReg     words            best strength 30.0
+  LogReg     words+neg        best strength 100.0
+  LogReg     words+pairs      best strength 1000.0
+  LogReg     words+pairs+neg  best strength 1000.0
+  NaiveBayes words            best strength 0.3
+  NaiveBayes words+neg        best strength 0.1
+  NaiveBayes words+pairs      best strength 0.1
+  NaiveBayes words+pairs+neg  best strength 0.03
+
+== 2. Negation handling (tuned settings, 3,200 training reviews) ==
+     model        features  strength  n_features  fit_seconds  accuracy  precision  recall    f1  neg_sentences  neg_pairs  mixed  sarcasm
+    LogReg           words     30.00       17291         0.42     0.875      0.881   0.868 0.874             13          3      8        5
+    LogReg     words+pairs   1000.00       82919         1.27     0.902      0.905   0.900 0.902             14          4      8        7
+    LogReg       words+neg    100.00       20207         0.97     0.880      0.882   0.878 0.880             15          5      7        6
+    LogReg words+pairs+neg   1000.00       86648         1.82     0.891      0.904   0.875 0.889             16          6      8        7
+NaiveBayes           words      0.30       17291         0.33     0.849      0.886   0.800 0.841             12          2      9        9
+NaiveBayes     words+pairs      0.10       82919         1.02     0.875      0.903   0.840 0.870             13          3      9        9
+NaiveBayes       words+neg      0.10       20207         0.90     0.835      0.866   0.792 0.828             15          5      9        9
+NaiveBayes words+pairs+neg      0.03       86648         1.62     0.874      0.892   0.850 0.871             13          3      9        8
+
+== 2b. Stability over 5 random splits (LogReg) ==
+       features  f1_mean  f1_std  f1_min  f1_max  neg_pairs_mean  neg_pairs_min  neg_pairs_max
+          words    0.865   0.016   0.846   0.885             1.4              0              2
+    words+pairs    0.881   0.021   0.860   0.912             3.0              2              4
+      words+neg    0.871   0.010   0.864   0.889             5.0              3              7
+words+pairs+neg    0.879   0.016   0.867   0.906             4.0              3              5
+
+== 3. Negation scope (LogReg, words+pairs+neg) ==
+        window  accuracy  precision  recall    f1  neg_sentences  neg_pairs  mixed  sarcasm
+             1     0.901      0.915   0.885 0.900             14          4      8        6
+             2     0.901      0.902   0.900 0.901             15          5      9        7
+             3     0.895      0.905   0.882 0.894             14          4      9        6
+to punctuation     0.891      0.904   0.875 0.889             16          6      8        7
+
+== 4. Learning curve ==
+  learning curve:   3200 reviews, words+pairs      F1 0.883  pairs 4/10
+  learning curve:   3200 reviews, words+pairs+neg  F1 0.888  pairs 4/10
+  learning curve:   6400 reviews, words+pairs      F1 0.904  pairs 3/10
+  learning curve:   6400 reviews, words+pairs+neg  F1 0.889  pairs 5/10
+  learning curve:  12800 reviews, words+pairs      F1 0.914  pairs 4/10
+  learning curve:  12800 reviews, words+pairs+neg  F1 0.911  pairs 3/10
+  learning curve:  24200 reviews, words+pairs      F1 0.916  pairs 5/10
+  learning curve:  24200 reviews, words+pairs+neg  F1 0.913  pairs 3/10
+
+== 5. Final test: chosen model = LogReg, words+pairs, strength 1000.0 ==
+                                           model  train_reviews  accuracy  precision  recall    f1  neg_sentences  neg_pairs  mixed  sarcasm
+M2 baseline (LogReg, words+pairs, 3,200 reviews)           3200     0.856      0.852   0.862 0.857             13          3      8        4
+     Final (LogReg, words+pairs, 25,000 reviews)          25000     0.905      0.906   0.904 0.905             14          4      9        7
+  final model: 2,363 test errors of 25,000
+
+Saved to C:\Users\umers\Documents\ai course 425\results\m3

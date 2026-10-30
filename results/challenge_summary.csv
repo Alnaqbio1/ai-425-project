@@ -1,0 +1,5 @@
+model,version,sentences_correct,base_correct,negated_correct,pairs_fully_correct
+LogReg,"A: words (1,1)",13/20,8/10,5/10,3/10
+LogReg,"B: words+pairs (1,2)",13/20,7/10,6/10,3/10
+NaiveBayes,"A: words (1,1)",12/20,6/10,6/10,2/10
+NaiveBayes,"B: words+pairs (1,2)",13/20,6/10,7/10,3/10

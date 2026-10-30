@@ -1,0 +1,66 @@
+== 1. Calibration ==
+     C  accuracy  precision  recall     f1  log_loss  brier    ece
+   0.3    0.8862     0.8853  0.8875 0.8864    0.4224 0.1264 0.1987
+   1.0    0.9050     0.9070  0.9025 0.9048    0.3229 0.0918 0.1334
+   3.0    0.9038     0.8968  0.9125 0.9046    0.2664 0.0759 0.0823
+  10.0    0.9100     0.9039  0.9175 0.9107    0.2312 0.0677 0.0458
+  30.0    0.9050     0.8951  0.9175 0.9062    0.2213 0.0653 0.0191
+ 100.0    0.9100     0.9020  0.9200 0.9109    0.2410 0.0670 0.0485
+1000.0    0.9125     0.9084  0.9175 0.9129    0.3060 0.0711 0.0551
+  chosen C = 30 (lowest validation log loss)
+
+== 2. Final system on the test set ==
+                          dataset        model  train_reviews  accuracy  precision  recall    f1  log_loss  brier   ece
+       IMDb test (25,000 reviews)  M2 baseline           3200     0.856      0.852   0.862 0.857     0.490  0.154 0.214
+       IMDb test (25,000 reviews)     M3 model          25000     0.905      0.906   0.904 0.905     0.294  0.074 0.048
+       IMDb test (25,000 reviews) Final system          25000     0.907      0.907   0.908 0.907     0.231  0.069 0.010
+Rotten Tomatoes sentences (1,066)  M2 baseline           3200     0.631      0.581   0.946 0.719     0.628  0.219 0.090
+Rotten Tomatoes sentences (1,066)     M3 model          25000     0.764      0.726   0.848 0.782     0.650  0.180 0.122
+Rotten Tomatoes sentences (1,066) Final system          25000     0.774      0.764   0.792 0.778     0.470  0.155 0.027
+   Amazon product reviews (4,000)  M2 baseline           3200     0.674      0.619   0.906 0.736     0.599  0.206 0.083
+   Amazon product reviews (4,000)     M3 model          25000     0.783      0.755   0.838 0.794     0.629  0.163 0.125
+   Amazon product reviews (4,000) Final system          25000     0.801      0.801   0.800 0.801     0.426  0.136 0.025
+
+== 3. Sentences with vs without negation (Rotten Tomatoes) ==
+          subset  sentences        model  accuracy
+   with negation        253  M2 baseline     0.664
+   with negation        253     M3 model     0.779
+   with negation        253 Final system     0.798
+without negation        813  M2 baseline     0.621
+without negation        813     M3 model     0.759
+without negation        813 Final system     0.766
+
+== 4. Challenge sets ==
+       model  neg_pairs  mixed  sarcasm
+ M2 baseline          3      8        4
+    M3 model          4      9        7
+Final system          4      9        7
+
+Strongest not_ features:
+          feature  weight
+        not_like    5.62
+     not_perfect    5.35
+        not_best    4.58
+       not_great    4.27
+not_disappointed    4.16
+        not_seen    3.85
+      not_before    3.85
+       not_today    3.74
+        not_many    3.72
+ not_masterpiece    3.66
+        not_miss    3.63
+        not_wait    3.20
+        not_even   -8.25
+       not_funny   -7.53
+       not_worth   -6.93
+       not_waste   -6.78
+        not_good   -6.51
+       not_worst   -6.35
+   not_recommend   -6.29
+  not_characters   -5.79
+        not_this   -5.10
+      not_enough   -4.85
+        not_save   -4.83
+      not_reason   -4.64
+
+Saved final model to C:\Users\umers\Documents\ai course 425\models\final_model.joblib and results to C:\Users\umers\Documents\ai course 425\results\m4

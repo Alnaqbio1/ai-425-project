@@ -1,0 +1,6 @@
+model,version,n_features,fit_seconds,accuracy,precision,recall,f1
+Majority class,-,0,0.0,0.5,0.0,0.0,0.0
+LogReg,"A: words (1,1)",17291,0.42,0.856,0.864,0.845,0.855
+LogReg,"B: words+pairs (1,2)",82919,1.14,0.882,0.892,0.87,0.881
+NaiveBayes,"A: words (1,1)",17291,0.34,0.838,0.917,0.742,0.82
+NaiveBayes,"B: words+pairs (1,2)",82919,1.01,0.862,0.934,0.78,0.85
