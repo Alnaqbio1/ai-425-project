@@ -1,0 +1,7 @@
+subset,sentences,model,accuracy
+with negation,253,M2 baseline,0.664
+with negation,253,M3 model,0.779
+with negation,253,Final system,0.798
+without negation,813,M2 baseline,0.621
+without negation,813,M3 model,0.759
+without negation,813,Final system,0.766
