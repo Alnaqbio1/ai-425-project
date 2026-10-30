@@ -1,0 +1,21 @@
+id,category,text,label
+1,mixed,"The movie was good, but the ending ruined it.",negative
+2,mixed,"I expected to hate it, but I loved it.",positive
+3,mixed,"The acting was weak, but the story kept me hooked until the end.",positive
+4,mixed,Beautiful visuals cannot save a boring and predictable script.,negative
+5,mixed,"It starts slow, but the last hour is brilliant.",positive
+6,mixed,"Great cast, wasted on a lazy plot.",negative
+7,mixed,"Not perfect, but I enjoyed every minute.",positive
+8,mixed,"The first half was fun, then it fell apart completely.",negative
+9,mixed,"Some scenes drag, but overall it is a wonderful film.",positive
+10,mixed,A promising idea with awful execution.,negative
+11,sarcasm,"Oh great, another two hours of my life I will never get back.",negative
+12,sarcasm,"What a masterpiece, I only fell asleep twice.",negative
+13,sarcasm,The plot twist was so surprising that I guessed it in the first five minutes.,negative
+14,sarcasm,"Sure, because every movie needs forty minutes of slow-motion explosions.",negative
+15,sarcasm,I loved paying full price to watch the actors look bored.,negative
+16,sarcasm,"Truly the best film ever made, if you enjoy staring at a wall.",negative
+17,sarcasm,Amazing how they managed to make a two-hour movie feel like five.,negative
+18,sarcasm,Perfect movie for when you need help falling asleep.,negative
+19,sarcasm,"Ten out of ten, would walk out again.",negative
+20,sarcasm,"The dialogue was so natural, said no one ever.",negative

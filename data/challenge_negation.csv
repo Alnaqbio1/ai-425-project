@@ -1,0 +1,21 @@
+pair_id,variant,text,label
+1,base,The movie was enjoyable.,positive
+1,negated,The movie was not enjoyable.,negative
+2,base,I would recommend this movie.,positive
+2,negated,I would not recommend this movie.,negative
+3,base,The acting was good.,positive
+3,negated,The acting was not good.,negative
+4,base,This film is worth watching.,positive
+4,negated,This film is not worth watching.,negative
+5,base,I liked the ending.,positive
+5,negated,I did not like the ending.,negative
+6,base,The plot made sense.,positive
+6,negated,The plot did not make sense.,negative
+7,base,It was a great movie.,positive
+7,negated,It was not a great movie.,negative
+8,base,The jokes were funny.,positive
+8,negated,The jokes were not funny.,negative
+9,base,The film was boring.,negative
+9,negated,The film was not boring.,positive
+10,base,The sequel was bad.,negative
+10,negated,The sequel was not bad.,positive
